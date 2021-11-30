@@ -19,9 +19,9 @@ function App() {
     let contactsClone = JSON.parse(JSON.stringify(allContacts))
     contactsClone.sort((first, second) => {
       if (first.popularity > second.popularity) {
-        return 1
-      } else if (first.popularity < second.popularity) {
         return -1
+      } else if (first.popularity < second.popularity) {
+        return 1
       } else {
         return 0
       }
